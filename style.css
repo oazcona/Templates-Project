@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Fira Sans", sans-serif;
+    color: rgba(59, 59, 124)
 }
 
 .container {
@@ -29,6 +31,24 @@ img {
 
 button {
     cursor: pointer;
+}
+
+.section__tag {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    color: rgba(100, 21, 255);
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.section__para {
+    line-height: 2;
+    color: rgba(97, 100, 122);
 }
 
 /* 
@@ -74,7 +94,6 @@ nav {
 .nav__logo--title {
     font-size: 24px;
     font-weight: 900;
-    color: rgba(59, 59, 124);
     letter-spacing: 1.5px;
 }
 
@@ -92,7 +111,7 @@ nav {
     color: rgba(97, 100, 122);
 }
 
-.nav__link--log-in{
+.nav__link--log-in {
     margin-left: 28px;
 }
 
@@ -120,13 +139,11 @@ HEADER
 }
 
 .header__title {
-    color: rgba(59, 59, 124);
     font-size: 36px;
     letter-spacing: 1px;
 }
 
 .header__description--para {
-    font-size: 16px;
     color: rgba(97, 100, 122);
     margin: 32px 0;
     line-height: 1.5;
@@ -153,7 +170,8 @@ HEADER
 .input__email::placeholder {
     font-size: 16px;
     font-weight: 500;
-    color: rgba(97, 100, 122, 0.5);;
+    color: rgba(97, 100, 122, 0.5);
+    ;
 }
 
 .email__btn {
@@ -196,5 +214,76 @@ HEADER
 /* 
 
 FEATURES
+
+*/
+
+#features {
+    position: relative;
+}
+
+#features .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#features .section__title {
+    margin: 16px 0;
+}
+
+#features .section__para {
+    text-align: center;
+    max-width: 576px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.service {
+    width: calc(100% / 3);
+}
+
+.service__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 24px;
+}
+
+.service__img--wrapper {
+    display: flex;
+    padding: 20px;
+    border: 1px solid rgba(97, 100, 122, 0.3);
+    border-radius: 50%;
+}
+
+.service__img {
+    width: 24px;
+    height: 24px;
+}
+
+.service__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.service__header {
+    font-size: 25px;
+
+}
+
+.service__para {
+    line-height: 2;
+    margin-top: 16px;
+    color: rgba(97, 100, 122);
+}
+
+/* 
+
+QUALITY WORK
 
 */
