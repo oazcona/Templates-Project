@@ -31,6 +31,17 @@ img {
 
 button {
     cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(59, 59, 124);
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: background-color 300ms ease;
+}
+
+button:hover {
+    background-color: rgba(100, 21, 255);
 }
 
 .section__tag {
@@ -43,11 +54,14 @@ button {
 .section__title {
     font-size: 48px;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
+    line-height: 1.25;
+    margin: 16px 0;
 }
 
 .section__para {
-    line-height: 2;
+    font-size: 18px;
+    line-height: 1.7;
     color: rgba(97, 100, 122);
 }
 
@@ -106,7 +120,7 @@ nav {
 .nav__link {
     text-decoration: none;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
     padding: 0 20px;
     color: rgba(97, 100, 122);
 }
@@ -120,10 +134,7 @@ nav {
 }
 
 .nav__btn {
-    border: none;
-    border-radius: 24px;
     padding: 12px 16px;
-    background-color: rgba(59, 59, 124);
 }
 
 /* 
@@ -165,13 +176,17 @@ HEADER
     padding: 0 180px 0 20px;
     border: 2px solid rgba(97, 100, 122, 0.3);
     border-radius: 500px;
+    transition: border 300ms ease;
+}
+
+.input__email:hover {
+    border: 2px solid rgba(97, 100, 122, 0.6);
 }
 
 .input__email::placeholder {
     font-size: 16px;
     font-weight: 500;
     color: rgba(97, 100, 122, 0.5);
-    ;
 }
 
 .email__btn {
@@ -180,14 +195,8 @@ HEADER
     top: 50%;
     right: 8px;
     transform: translateY(-50%);
-    font-size: 16px;
-    font-weight: 600;
     height: 52px;
     width: 160px;
-    border: none;
-    border-radius: 28px;
-    background-color: rgba(59, 59, 124);
-    color: white;
 }
 
 .header__customers {
@@ -217,18 +226,10 @@ FEATURES
 
 */
 
-#features {
-    position: relative;
-}
-
 #features .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#features .section__title {
-    margin: 16px 0;
 }
 
 #features .section__para {
@@ -285,5 +286,149 @@ FEATURES
 /* 
 
 QUALITY WORK
+
+*/
+
+#quality .quality__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 64px;
+}
+
+.quality__btn {
+    margin-top: 32px;
+    height: 44px;
+    width: 152px;
+}
+
+#quality .quality__img--wrapper {
+    width: 50%;
+    border: 1px solid rgba(97, 100, 122, 0.3);
+}
+
+/* 
+
+STEPS
+
+*/
+
+.steps__img--wrapper {
+    width :50%;
+}
+
+.steps__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    padding-left: 64px;
+}
+
+.step {
+    display: flex;
+    margin-top: 32px;
+}
+
+.step__number {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(97, 100, 122, 0.3);
+    
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.step__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.step__para {
+    line-height: 2;
+    font-size: 14px;
+    color: rgba(97, 100, 122);
+    margin-top: 12px;
+}
+
+/* 
+
+VALUES
+
+*/
+
+.values__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+    margin-right: 64px;
+}
+
+.values__img {
+    width: 50%;
+}
+
+.values__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.value {
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.value__title {
+    display: flex;
+    align-items: center;
+}
+
+.value__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.value:first-child .value__img--wrapper {
+    background-color: rgb(127, 209, 138);
+}
+
+.value:last-child .value__img--wrapper {
+    background-color: rgb(243, 151, 151);
+}
+
+.value__img {
+    width: 20px;
+    height: 20px;
+}
+
+.value__subtitle {
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+.value__para {
+    margin-top: 16px;
+    line-height: 1.7;
+    color: rgba(97, 100, 122);
+}
+
+.value__btn {
+    height: 40px;
+    width: 152px;
+    margin-top: 32px;
+}
+
+/* 
+
+PRICING
 
 */
