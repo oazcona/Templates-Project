@@ -398,16 +398,24 @@ VALUES
 }
 
 .value:first-child .value__img--wrapper {
-    background-color: rgb(127, 209, 138);
+    background-color: rgba(127, 209, 138);
 }
 
 .value:last-child .value__img--wrapper {
-    background-color: rgb(243, 151, 151);
+    background-color: rgba(243, 151, 151);
 }
 
-.value__img {
+.value__icon {
     width: 20px;
     height: 20px;
+}
+
+.value:first-child .value__icon {
+    color: rgba(30, 138, 70);
+}
+
+.value:last-child .value__icon {
+    color: rgba(189, 49, 49);
 }
 
 .value__subtitle {
