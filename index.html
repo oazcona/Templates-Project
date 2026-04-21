@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact Templates</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dfd840d27b.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
     <section id="landing">
         <nav>
-            <div class="nav__container">
-                <div class=" nav__row">
+            <div class="row nav__row">
+                <div class="nav__logo">
                     <img class="nav__logo--img" src="Assets/treact-logo.svg" alt="">
                     <div class="nav__logo--title">Treact</div>
                 </div>
                 <ul class="nav__links">
-                    <li><a href="#" class="nav__link">About</a></li>
-                    <li><a href="#" class="nav__link">Blog</a></li>
-                    <li><a href="#" class="nav__link">Pricing</a></li>
-                    <li><a href="#" class="nav__link">Contact Us</a></li>
+                    <li><a href="#features" class="nav__link">About</a></li>
+                    <li><a href="#testimonials" class="nav__link">Blog</a></li>
+                    <li><a href="#pricing" class="nav__link">Pricing</a></li>
+                    <li><a href="#start" class="nav__link">Contact Us</a></li>
                     <li><a href="#" class="nav__link nav__link--log-in">Login</a></li>
                     <li><button class="nav__btn"><a href="#" class="nav__link nav__link--primary">Sign Up</a></button></l1>
                 </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="menu__links">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">About</a>
+                        <a href="#testimonials" class="menu__link" onclick="closeMenu()">Blog</a>
+                        <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                        <a href="#start" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                        <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                        <a href="#"class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+                    </div>
+                </div>
             </div>
         </nav>
         <header>
@@ -34,7 +52,8 @@
                             Beautiful React Templates <span class="color">for you.</span>
                         </h1>
                         <p class="header__description--para">
-                            Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
+                            Our templates are easy to setup, understand and customize. Fully modular components with a
+                            variety of pages and components.
                         </p>
                         <div class="header__email">
                             <input type="email" class="input__email" placeholder="example@email.com">
@@ -52,7 +71,7 @@
             </div>
         </header>
     </section>
-    
+
     <main>
         <section id="features">
             <div class="container">
@@ -64,7 +83,8 @@
                         We Have Amazing <span class="color">Service.</span>
                     </div>
                     <div class="section__para">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quas vel atque quis tempora distinctio doloribus quaerat  aliquam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quas vel atque quis
+                        tempora distinctio doloribus quaerat aliquam.
                     </div>
                     <div class="services">
                         <div class="service">
@@ -172,7 +192,8 @@
                             Designed & Developed by <span class="color">Professionals.</span>
                         </div>
                         <div class="section__para">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum pariatur possimus laboriosam eum recusandae obcaecati nihil deserunt magni voluptatibus.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum pariatur possimus laboriosam
+                            eum recusandae obcaecati nihil deserunt magni voluptatibus.
                         </div>
                         <button class="quality__btn">Learn More</button>
                     </div>
@@ -231,8 +252,7 @@
                                         Run
                                     </div>
                                     <div class="step__para">
-                                        Browse and Download the template that you like from the marketplace.
-                                    </div>
+                                        Follow the instructions to setup and customize the template to your needs.
                                 </div>
                             </div>
                         </div>
@@ -251,7 +271,9 @@
                             We Always Abide by Our <span class="color">Principles.</span>
                         </div>
                         <div class="section__para">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic illo deserunt excepturi quam velit, rem, quae laborum dolor, asperiores ea voluptatum! Enim dolorum iste consequuntur sit veniam accusantium architecto nisi!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic illo deserunt excepturi quam
+                            velit, rem, quae laborum dolor, asperiores ea voluptatum! Enim dolorum iste consequuntur sit
+                            veniam accusantium architecto nisi!
                         </div>
                         <div class="values__list">
                             <div class="value">
@@ -297,7 +319,8 @@
                         Reasonable & Flexible <span class="color">Plans.</span>
                     </div>
                     <div class="section__para">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quidem dolorum non illum delectus neque praesentium pariatur.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quidem dolorum non illum
+                        delectus neque praesentium pariatur.
                     </div>
                     <div class="plans">
                         <div class="plan plan--personal">
@@ -418,7 +441,8 @@
                             Our Clients <span class="color">Love Us.</span>
                         </div>
                         <div class="section__para">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquam assumenda iusto hic dignissimos dicta voluptates qui? Possimus dolorem!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquam assumenda iusto
+                            hic dignissimos dicta voluptates qui? Possimus dolorem!
                         </div>
                         <div class="testimonial">
                             <div class="testimonial__rating">
@@ -432,7 +456,11 @@
                                 Amazing User Experience
                             </div>
                             <p class="testimonial__para">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco.
                             </p>
                         </div>
                         <div class="testimonial__bottom">
@@ -446,8 +474,8 @@
                                         Director, Delos Inc.
                                     </div>
                                 </div>
-                             </div>   
-                             <div class="testimonial__buttons">
+                            </div>
+                            <div class="testimonial__buttons">
                                 <button class="testimonial__btn"><i class="arrow fa-solid fa-arrow-left"></i></button>
                                 <div class="divider"></div>
                                 <button class="testimonial__btn"><i class="arrow fa-solid fa-arrow-right"></i></button>
@@ -479,13 +507,59 @@
     <footer>
         <div class="row footer__row">
             <div class="footer__columns">
-
+                <div class="footer__column--links">
+                    <div class="footer__column--title">MAIN</div>
+                    <a href="" class="footer__column--link">Blog</a>
+                    <a href="" class="footer__column--link">FAQs</a>
+                    <a href="" class="footer__column--link">Support</a>
+                    <a href="" class="footer__column--link">About Us</a>
+                </div>
+                <div class="footer__column--links">
+                    <div class="footer__column--title">PRODUCT</div>
+                    <a href="" class="footer__column--link">Log In</a>
+                    <a href="" class="footer__column--link">Personal</a>
+                    <a href="" class="footer__column--link">Business</a>
+                    <a href="" class="footer__column--link">Team</a>
+                </div>
+                <div class="footer__column--links">
+                    <div class="footer__column--title">PRESS</div>
+                    <a href="" class="footer__column--link">Logos</a>
+                    <a href="" class="footer__column--link">Events</a>
+                    <a href="" class="footer__column--link">Stories</a>
+                    <a href="" class="footer__column--link">Office</a>
+                </div>
+                <div class="footer__column--links">
+                    <div class="footer__column--title">TEAM</div>
+                    <a href="" class="footer__column--link">Career</a>
+                    <a href="" class="footer__column--link">Founders</a>
+                    <a href="" class="footer__column--link">Culture</a>
+                    <a href="" class="footer__column--link">Onboarding</a>
+                </div>
+                <div class="footer__column--links">
+                    <div class="footer__column--title">LEGAL</div>
+                    <a href="" class="footer__column--link">GDPR</a>
+                    <a href="" class="footer__column--link">Privacy Policy</a>
+                    <a href="" class="footer__column--link">Terms of Service</a>
+                    <a href="" class="footer__column--link">Disclaimer</a>
+                </div>
             </div>
             <div class="footer__divider"></div>
             <div class="footer__bottom">
-                
+                <div class=" footer__logo">
+                    <img class="footer__logo--img" src="Assets/treact-logo-alternate.svg" alt="">
+                    <div class="footer__logo--title">Treact Inc.</div>
+                </div>
+                <div class="footer__copyright">
+                    © 2026 Treact Inc. All Rights Reserved.
+                </div>
+                <div class="footer__socials">
+                    <button class="socials__btn"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="socials__btn"><i class="fa-brands fa-x-twitter"></i></button>
+                    <button class="socials__btn"><i class="fa-brands fa-youtube"></i></button>
+                </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
