@@ -49,9 +49,6 @@ ul {
 button {
     cursor: pointer;
     border: none;
-}
-
-button:not(.btn__menu, .btn__menu--close) {
     border-radius: 100px;
     background-color: rgba(59, 59, 124);
     font-size: 16px;
